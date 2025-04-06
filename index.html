@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Petruxa Syndicate — инновационный синдикат с современными цифровыми решениями.">
+    <meta name="keywords" content="Petruxa Syndicate, технологии, GTA, синдикат, стартап, услуги">
+    <meta name="author" content="Petruxa Syndicate Team">
+    <title>Petruxa Syndicate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="index">
+    <div class="bg-overlay"></div>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2 class="neon-text">Petruxa Syndicate</h2>
+            </div>
+            <ul class="nav-links">
+    <li><a href="index.html" class="nav-link" data-lang="home">Главная</a></li>
+    <li><a href="join.html" class="nav-link" data-lang="join">Присоединиться</a></li>
+    <li><a href="contact.html" class="nav-link" data-lang="contact">Связь</a></li>
+    <li><a href="laws.html" class="nav-link" data-lang="laws">Законы</a></li>
+</ul>
+            <div id="language-selector" style="position: fixed; top: 20px; right: 20px; cursor: pointer; z-index: 11;">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/globe.png" alt="Language Selector" width="30" height="30">
+                <div id="language-dropdown" class="language-dropdown">
+                    <a href="#" data-lang-code="en">English</a>
+                    <a href="#" data-lang-code="ru">Русский</a>
+                    <a href="#" data-lang-code="uk">Українська</a>
+                    <a href="#" data-lang-code="pl">Polski</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 id="greeting" class="cyber-title">Добро пожаловать в Petruxa Syndicate</h1>
+                <p id="welcome" class="subtitle">Открываем будущее вместе</p>
+                <a href="join.html" class="action-btn" data-lang="join">Присоединиться</a>
+            </div>
+            <img src="https://images5.alphacoders.com/132/1323479.jpeg" alt=" " class="hero-image">
+            <div class="particles" id="particles-js"></div>
+        </section>
+
+        <section class="about-section">
+            <h2 id="about-title">О нас</h2>
+            <p id="about-text">Мы — это элитная команда, объединяющая лучших игроков. Мы стремимся к совершенству в каждой области: от стратегического планирования до взаимодействия с другими игроками.</p>
+        </section>
+
+        <section class="services-section">
+            <h2 id="services-title">Наши услуги</h2>
+            <ul>
+                <li data-lang="service1">💻 Сила и поддержка</li>
+                <li data-lang="service2">🎉 Участие в крупных событиях</li>
+                <li data-lang="service3">💰 Финансовые консультации</li>
+                <li data-lang="service4">🌐 Возможности для роста</li>
+                <li data-lang="service5">🏅 Эксклюзивные привилегии</li>
+                <li data-lang="service6">🚔Наши ребята командуют в LSPD, EMS, FIB. Закон — на нашей стороне</li>
+            </ul>
+        </section>
+
+        <section class="team-section">
+            <h2 id="team-title">Наша команда</h2>
+            <div class="team-member">
+                <img src="https://i.postimg.cc/tRLjTSNY/image.jpg" alt="Den Petruxa" class="team-photo">
+                <h3>Den Petruxa</h3>
+                <p data-lang="team1">Стратег и лидер команды, ответственен за организацию и планирование.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://i.postimg.cc/nhxfKX5x/5ff872f2eab870e-upscaled.jpg" alt="Lisa Petruxa" class="team-photo">
+                <h3>Lisa Petruxa</h3>
+                <p data-lang="team2">Эксперт в области финансов, отвечает за стратегические инвестиции и консультации.</p>
+            </div>
+        </section>
+
+        <section class="achievements-section">
+            <h2 id="achievements-title">Наши достижения</h2>
+            <ul>
+                <li data-lang="achievement1">🏆 Лидерство в гос. структурах</li>
+                <li data-lang="achievement2">💼 Легенды в гос. структурах</li>
+                <li data-lang="achievement3">🏍️ Захваты и угоны</li>
+                <li data-lang="achievement4">🔐 Защита собственности и помощь в решениях</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footer">© 2025 Все права защищены.</p>
+    </footer>
+
+    <div id="transitionOverlay" class="transition-overlay"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#ff00ff" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": { "enable": true, "distance": 150, "color": "#00ffff", "opacity": 0.4, "width": 1 },
+                "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } },
+                "modes": { "repulse": { "distance": 100, "duration": 0.4 } }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>

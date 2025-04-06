@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Законы и правила Petruxa Syndicate.">
+    <meta name="keywords" content="Petruxa Syndicate, законы, правила, синдикат">
+    <meta name="author" content="Petruxa Syndicate Team">
+    <title>Законы - Petruxa Syndicate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="laws">
+    <div class="bg-overlay"></div>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h2 class="neon-text">Petruxa Syndicate</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-lang="home">Главная</a></li>
+                <li><a href="join.html" class="nav-link" data-lang="join">Присоединиться</a></li>
+                <li><a href="contact.html" class="nav-link" data-lang="contact">Связь</a></li>
+                <li><a href="laws.html" class="nav-link" data-lang="laws">Законы</a></li>
+            </ul>
+            <div id="language-selector" style="position: fixed; top: 20px; right: 20px; cursor: pointer; z-index: 11;">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/globe.png" alt="Language Selector" width="30" height="30">
+                <div id="language-dropdown" class="language-dropdown">
+                    <a href="#" data-lang-code="en">English</a>
+                    <a href="#" data-lang-code="ru">Русский</a>
+                    <a href="#" data-lang-code="uk">Українська</a>
+                    <a href="#" data-lang-code="pl">Polski</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="laws-section">
+            <h1 id="laws-title" class="cyber-title">Законы Синдиката</h1>
+            <div class="laws-container">
+                <div class="ic-laws">
+                    <h2 id="ic-laws-title">IC Законы</h2>
+                    <ul>
+                        <li data-lang="icLaw1">Соблюдай законы Лос-Сантоса, если ты в LSPD, EMS или FIB.</li>
+                        <li data-lang="icLaw2">Уважай старших по званию в синдикате.</li>
+                        <li data-lang="icLaw3">Не предавай семью ради личной выгоды.</li>
+                        <li data-lang="icLaw4">Все операции согласовывай с руководством.</li>
+                    </ul>
+                </div>
+                <div class="ooc-laws">
+                    <h2 id="ooc-laws-title">OOC Правила</h2>
+                    <ul>
+                        <li data-lang="oocLaw1">Запрещено использование читов и багов.</li>
+                        <li data-lang="oocLaw2">Соблюдай правила сервера RP.</li>
+                        <li data-lang="oocLaw3">Уважай других игроков вне зависимости от роли.</li>
+                        <li data-lang="oocLaw4">Сообщай о проблемах администрации.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p data-lang="footer">© 2025 Все права защищены.</p>
+    </footer>
+
+    <div id="transitionOverlay" class="transition-overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>
